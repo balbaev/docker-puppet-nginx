@@ -1,6 +1,7 @@
 # Puppet with nginx in docker
 # Install
 The instructions assume that you have already installed [Docker](https://docs.docker.com/installation/) and [Docker Compose](https://docs.docker.com/compose/install/).
+Requires Docker Engine version __18.06.0__ and higher.
 
 In order to get started be sure to clone this project onto your host.
 
