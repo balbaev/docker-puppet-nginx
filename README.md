@@ -4,7 +4,7 @@ The instructions assume that you have already installed [Docker](https://docs.do
 
 In order to get started be sure to clone this project onto your host.
 
-	git clone https://github.com/zorgan/docker-puppet-nginx.git .
+	git clone https://github.com/zorgan/docker-puppet-nginx.git
 
 # Up and running
 Once you've cloned the project to your host we can now start our demo project. Navigate to the directory in which you cloned the project. Run the following commands from this directory 
