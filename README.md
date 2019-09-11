@@ -8,7 +8,7 @@ In order to get started be sure to clone this project onto your host.
 	git clone https://github.com/zorgan/docker-puppet-nginx.git
 
 # Up and running
-Once you've cloned the project to your host we can now start our demo project. Navigate to the directory in which you cloned the project. Run the following commands from this directory 
+Once you've cloned the project to your host we can now start our demo project. Navigate to the directory in which you cloned the project. Run the following command from this directory 
 
 	docker-compose up -d
 
@@ -17,7 +17,7 @@ After the command completes we can now view the status of our stack
 	docker ps
 
 # Puppet-agent simulation:
-In order to simulate puppet-agent we would run docker container with Ubuntu 18.04 image and exposed TCP 80 port.
+In order to simulate puppet-agent we would run docker container with Ubuntu 18.04 image and exposed TCP 80 port. Run the following command from the project directory
 
 	docker run --name apply-test --net puppetnetwork --volume "${PWD}"/scripts:/mnt -p 80:80 -it ubuntu:18.04 /bin/bash
 
@@ -25,6 +25,6 @@ Once bash prompt appears we would install puppet-agent and fetch configuration f
 
 	/mnt/apply-test.sh
 
-After the command completes we can now curl host and get __Hello <b>world</b>!__
+After the command completes we can now curl the host and get *Hello __world__!*
 
 	curl http://<host>/
